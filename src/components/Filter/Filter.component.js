@@ -1,15 +1,21 @@
 import PropTypes from 'prop-types';
-import FormField from "components/ContactForm/FormField"
-
+import { Input, Label } from 'components/ContactForm/ContactForm.styled';
 const Filter = ({ onChange, value }) => {
     return (
-        <FormField
-            type="text"
-            name="filter"
-            fieldName="Find contacts by name"
-            onChange={onChange}
-            value={value}
-        />
+        <>
+            <Label
+                htmlFor='filter'
+            >
+                Find contacts by name
+            </Label>
+            <Input
+                id="filter"
+                type="text"
+                name="filter"
+                onChange={onChange}
+                value={value}
+            />
+        </>
     )
 }
 

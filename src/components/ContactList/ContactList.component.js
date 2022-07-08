@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import Contact from './Contact';
-import Button from 'components/common/Button';
 import { ListItem, ListOfContacts } from './ContactList.styled';
 
 const ContactList = ({ contactList, deleteContact }) => {
@@ -14,12 +13,8 @@ const ContactList = ({ contactList, deleteContact }) => {
                         <Contact
                             name={name}
                             number={number}
+                            deleteContact={() => deleteContact(id)}
                         />
-                        <Button
-                            onClick={() => deleteContact(id)}
-                        >
-                            &#9587;
-                        </Button>
                     </ListItem>
                 ))
             }
