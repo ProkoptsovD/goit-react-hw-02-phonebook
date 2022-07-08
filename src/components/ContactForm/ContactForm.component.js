@@ -2,7 +2,7 @@ import { Component } from "react";
 import PropTypes from 'prop-types';
 import { Form, Wrapper, AddContact, Label, Input } from './ContactForm.styled';
 import { nanoid } from "nanoid";
-import { toast } from 'react-toastify';
+// import { toast } from 'react-toastify';
 
 class ContactForm extends Component {
     static propTypes = {
